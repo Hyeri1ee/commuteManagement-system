@@ -57,6 +57,19 @@
 - db 연결
 - 단계 1 api 추가 + 직원 팀 배정 api 추가
 
+:four: 마무리
+
+```angular2html
+1 단계 api 설명
+```
+swagger 에도 올려놓았지만 1단계에서 구현한 api를 설명하면 다음과 같다.
+- (POST) /v1/team/create : 팀 이름을 넣어 팀 등록을 한다.
+- (GET) /v1/team/overview : 등록된 팀 전체 조회를 한다.
+- (POST) /v1/conlleague/putTeam : 직원을 등록된 팀에 배정 한다. ```(개인적으로 추가한 api)```
+- (POST) /v1/colleague/create : 직원 정보를 넣어 직원 등록을 한다.
+- (GET) /v1/colleague/overview : 등록된 직원 전체 조회를 한다.
+
+
 
 ## 단계 2
 
