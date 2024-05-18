@@ -1,4 +1,4 @@
-package com.group.commuteManage.dto;
+package com.group.commuteManage.dto.request;
 
 import lombok.Getter;
 
