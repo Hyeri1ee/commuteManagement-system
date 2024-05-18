@@ -1,11 +1,11 @@
-package com.group.commuteManage.controller.team;
+package com.group.commuteManage.controller;
 
+import com.group.commuteManage.dto.response.TeamOverviewResponse;
 import com.group.commuteManage.service.team.TeamService;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("v1/team")
@@ -22,6 +22,11 @@ public class TeamController {
     teamService.teamCreate(name);
   }
 
+  @ApiOperation(value ="팀 조회", notes = "팀의 정보를 한 번에 조회한다")
+  @GetMapping("/overview")
+  public List<TeamOverviewResponse> teamOverview(){
+    return teamService.teamOverview();
+  }
 //  @ApiOperation(value ="팀 수정", notes= "팀 이름을 수정한다")
 //  @PostMapping("/create")
 //  public void teamCreate(@RequestParam String name){
