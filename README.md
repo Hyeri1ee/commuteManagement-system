@@ -2,14 +2,14 @@
 
 ###  :hamburger: 설명
 
-1. 사용될 기술 스택
+::one:: 사용될 기술 스택
 - 자바 17 버전
 - Spring Boot 3.x.x 버전
 - JPA
 - MySQL
 - html, css, js
 
-2. 프로젝트 설명
+::two:: 프로젝트 설명
 
 ```angular2html
 1. 구현되어야 하는 기능 (api)
@@ -47,3 +47,10 @@
 ```test```: 프로덕션 코드 변경이 없는 테스트 코드의 추가, 리팩터링의 테스트
 
 ```chore```: 프로덕션 코드 변경이 없는 빌드 태스크 업데이트, 패키지의 config 변경
+
+::three:: 작업 순서
+
+- :grinning_cat: [swagger](http://localhost:8080/swagger-ui/index.html) 문서화 적용
+- 팀 등록 기능 api 개발
+- :cat_with_tears_of_joy: db 연결
+- 
