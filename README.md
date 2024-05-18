@@ -2,14 +2,14 @@
 
 ###  :hamburger: 설명
 
-1. 사용될 기술 스택
+::one:: 사용될 기술 스택
 - 자바 17 버전
 - Spring Boot 3.x.x 버전
 - JPA
 - MySQL
 - html, css, js
 
-2. 프로젝트 설명
+::two:: 프로젝트 설명
 
 ```angular2html
 1. 구현되어야 하는 기능 (api)
