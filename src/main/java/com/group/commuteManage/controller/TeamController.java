@@ -1,4 +1,4 @@
-package com.group.commuteManage.controller.team;
+package com.group.commuteManage.controller;
 
 import com.group.commuteManage.service.team.TeamService;
 import io.swagger.annotations.ApiOperation;
