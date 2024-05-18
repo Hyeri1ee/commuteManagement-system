@@ -14,19 +14,19 @@ public class Colleague {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
-  @Column(nullable = false, length = 20)
+  @Column(nullable = false, length = 20, name ="name")
   private String name;
-  @Column(nullable = false)
-  private boolean isTeamManager;
-  @Column(nullable = false)
-  private LocalDate enteringDay;
-  @Column(nullable = false)
+  @Column(nullable = false, name ="isteammanager")
+  private boolean isteammanager;
+  @Column(nullable = false , name = "enteringday")
+  private LocalDate enteringday;
+  @Column(nullable = false , name ="birthday")
   private LocalDate birthday;
 
-  public Colleague(String name, boolean isTeamManager, LocalDate enteringDay, LocalDate birthday) {
+  public Colleague(String name, boolean isteammanager, LocalDate enteringday, LocalDate birthday) {
     this.name = name;
-    this.isTeamManager = isTeamManager;
-    this.enteringDay = enteringDay;
+    this.isteammanager = isteammanager;
+    this.enteringday = enteringday;
     this.birthday = birthday;
   }
 }

@@ -27,7 +27,7 @@ public class ColleagueService {
             .findAny()
             .ifPresent(e -> new IllegalAccessError("동일인이 이미 등록되어있습니다."));
     //db에 등록
-    colleagueRepository.save(new Colleague(request.getName(),request.isTeamManager(),
-            request.getEnteringDay(),request.getBirthday()));
+    colleagueRepository.save(new Colleague(request.getName(),request.isIsteammanager(),
+            request.getEnteringday(),request.getBirthday()));
   }
 }
